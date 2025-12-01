@@ -15,7 +15,6 @@ int main() {
         printf("Roots are real and different: %.0f, %.0f\n", root1, root2);
     }
     else if (discriminant == 0) {
-        // real and same root
         root1 = -b / (2 * a);
         printf("Roots are real and same: %.0f\n", root1);
     }
@@ -28,31 +27,3 @@ int main() {
     return 0;
 }
 
-Q18: Write a program to assign grades based on a percentage input.
-
-#include <stdio.h>
-
-int main() {
-    int percentage;
-
-    printf("Enter percentage: ");
-    scanf("%d", &percentage);
-
-    if (percentage >= 90) {
-        printf("Grade A\n");
-    }
-    else if (percentage >= 80) {
-        printf("Grade B\n");
-    }
-    else if (percentage >= 70) {
-        printf("Grade C\n");
-    }
-    else if (percentage >= 60) {
-        printf("Grade D\n");
-    }
-    else {
-        printf("Grade F\n");
-    }
-
-    return 0;
-}
